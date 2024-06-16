@@ -13,7 +13,7 @@ enum CoffeeSize: String, Codable, CaseIterable {
     case large = "Large"
 }
 
-struct Order: Decodable, Identifiable, Hashable {
+struct Order: Decodable, Identifiable, Hashable, Encodable {
     var id: Int?
     var name: String
     var coffeeName: String
